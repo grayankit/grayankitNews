@@ -7,9 +7,9 @@ export default class Newscompnent extends Component {
     return (
       <div>
         <div className="card" style={{ width: "18rem" }}>
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info">
+        <span className="badge rounded-pill bg-info" style={{left: '0', zIndex: '1' ,position : 'absolute'}}>
         {source}
-        <span class="visually-hidden">unread messages</span>
+        <span className="visually-hidden">unread messages</span>
         </span>
           <img
             src={
@@ -23,7 +23,7 @@ export default class Newscompnent extends Component {
           <div className="card-body">
             <h5 className="card-title">{title}....</h5>
             <p className="card-text">{Description}....</p>
-            <p className="card-text"><small class="text-muted">By {!author ? "Unknown" : author} on  {new Date(publishedAt).toGMTString()}</small></p>
+            <p className="card-text"><small className="text-muted">By {!author ? "Unknown" : author} on  {new Date(publishedAt).toGMTString()}</small></p>
             <a
               href={newsUrl}
               className="btn btn-primary btn-sm"
