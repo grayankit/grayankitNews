@@ -4,8 +4,7 @@ import Navbar from "./components/Navbar.js";
 import News from "./components/News.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-export default class App extends Component {
-  render() {
+const App = () =>{
     return (
       <Router>
         <div>
@@ -111,5 +110,5 @@ export default class App extends Component {
         </div>
       </Router>
     );
-  }
 }
+export default App;
